@@ -1,0 +1,124 @@
+<!--
+* Tabler - Premium and Open Source dashboard template with responsive and high quality UI.
+* @version 1.0.0-beta16
+* @link https://tabler.io
+* Copyright 2018-2022 The Tabler Authors
+* Copyright 2018-2022 codecalm.net Paweł Kuna
+* Licensed under MIT (https://github.com/tabler/tabler/blob/master/LICENSE)
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Feedback Form</title>
+    <!-- CSS files -->
+    <link href="../dist/css/tabler.min.css?1668287865" rel="stylesheet" />
+    <link href="../dist/css/tabler-flags.min.css?1668287865" rel="stylesheet" />
+    <link rel="stylesheet" href="../dist/css/Feedback_form.css" />
+    <link
+      href="../dist/css/tabler-payments.min.css?1668287865"
+      rel="stylesheet"
+    />
+    <link
+      href="../dist/css/tabler-vendors.min.css?1668287865"
+      rel="stylesheet"
+    />
+    <link href="../dist/css/demo.min.css?1668287865" rel="stylesheet" />
+    <style>
+      @import url("https://rsms.me/inter/inter.css");
+      :root {
+        --tblr-font-sans-serif: Inter, -apple-system, BlinkMacSystemFont,
+          San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+      }
+    </style>
+  </head>
+  <body class="border-top-wide border-primary d-flex flex-column">
+    <script src="./dist/js/demo-theme.min.js?1668287865"></script>
+    <div class="page page-center">
+      <div class="container container-tight py-4">
+        <div class="card card-md">
+          <div class="card-body">
+            <h2 class="h2 text-center mb-4">User Feedback</h2>
+            <form action="./" method="get" autocomplete="off" novalidate>
+              <div class="mb-3">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-8">
+                      <div class="rating">
+                        <input
+                          type="radio"
+                          name="rating"
+                          id="star5"
+                          value="5"
+                        />
+                        <label for="star5"></label>
+                        <input
+                          type="radio"
+                          name="rating"
+                          id="star4"
+                          value="4"
+                        />
+                        <label for="star4"></label>
+                        <input
+                          type="radio"
+                          name="rating"
+                          id="star3"
+                          value="3"
+                        />
+                        <label for="star3"></label>
+                        <input
+                          type="radio"
+                          name="rating"
+                          id="star2"
+                          value="2"
+                        />
+                        <label for="star2"></label>
+                        <input
+                          type="radio"
+                          name="rating"
+                          id="star1"
+                          value="1"
+                        />
+                        <label for="star1"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-2">
+                <div class="input-group input-group-flat"></div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label"
+                  >Feedback Comments
+                  <span class="form-label-description">56/100</span></label
+                >
+                <textarea
+                  class="form-control"
+                  name="example-textarea-input"
+                  rows="6"
+                  placeholder="Content.."
+                >
+Oh! Come and see the violence inherent in the system! Help, help, I'm being repressed! We shall say 'Ni' again to you, if you do not appease us. I'm not a witch. I'm not a witch. Camelot!</textarea
+                >
+              </div>
+              <div class="form-footer">
+                <button type="submit" class="btn btn-primary w-100">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Libs JS -->
+    <!-- Tabler Core -->
+    <script src="../dist/js/tabler.min.js?1668287865" defer></script>
+    <script src="../dist/js/demo.min.js?1668287865" defer></script>
+  </body>
+</html>
