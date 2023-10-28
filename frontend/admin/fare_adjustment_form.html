@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Fare Adjustment Interface</title>
+  <!-- CSS files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    @import url('https://rsms.me/inter/inter.css');
+
+    :root {
+      --tblr-font-sans-serif: Inter, -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+    }
+
+    .ticket-info {
+      font-size: 18px;
+    }
+/* 
+    .ticket-title {
+      font-size: px !important;
+      font-weight: 900;
+    } */
+
+    .ticket-card2 {
+      background-color: #ffffff;
+      border: 1px solid #878787;
+      border-radius: 10px;
+      width: 180px;
+      margin: 10px;
+      padding: 5px;
+      /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+      text-align: center;
+    }
+
+    .fareForm {
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .ticket-info {
+      padding: 5px;
+    }
+
+    .custom-container {
+      width: 100%;
+      margin: auto;
+      padding: 10px 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" defer></script>
+  <div class="page">
+    <div class="page-wrapper">
+      <div class="page-body">
+        <div class="custom-container">
+          <div class="row row-cards">
+            <div class="col-md-6 col-lg-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title .ticket-title">Parking Slots</h4>
+                </div>
+                <div class="custom-container">
+                  <div class="row">
+                    <div class="col-8">
+                      <div class="row">
+                        <div class="ticket-card2 slot" data-slot="1">
+                          <div class="">
+                            <h4 class="fs-5">SLOT</h4>
+
+                          </div>
+                          <div class="ticket-info">
+                            <p><strong>Slot No :</strong>1</p>
+                            <p><strong>Fare :</strong>100/-</p>
+                          </div>
+                        </div>
+
+                        <div class="ticket-card2 slot" data-slot="2">
+                          <div class="ticket-title">
+                            <h4 class="text-center fs-5">SLOT</h4>
+                          </div>
+                          <div class="ticket-info">
+                            <p><strong>Slot No :</strong>2</p>
+                            <p><strong>Fare :</strong>100/-</p>
+                          </div>
+                        </div>
+                        <div class="ticket-card2 slot" data-slot="3">
+                          <div class="ticket-title">
+                            <h4 class="text-center fs-5">SLOT</h4>
+                          </div>
+                          <div class="ticket-info">
+                            <p><strong>Slot No :</strong>3</p>
+                            <p><strong>Fare :</strong>100/-</p>
+                          </div>
+                        </div>
+
+
+                        <div class="ticket-card2 slot" data-slot="4">
+                          <div class="ticket-title">
+                            <h4 class="text-center fs-5">SLOT</h4>
+                          </div>
+                          <div class="ticket-info">
+                            <p><strong>Slot No :</strong>4</p>
+                            <p><strong>Fare :</strong>100/-</p>
+                          </div>
+                        </div>
+
+
+                        <div class="ticket-card2 slot" data-slot="5">
+                          <div class="ticket-title">
+                            <h4 class="text-center fs-5">SLOT</h4>
+                          </div>
+                          <div class="ticket-info">
+                            <p><strong>Slot No :</strong>5</p>
+                            <p><strong>Fare :</strong>100/-</p>
+                          </div>
+                        </div>
+
+
+
+                        <div class="ticket-card2 slot" data-slot="6">
+                          <div class="ticket-title">
+                            <h4 class="text-center fs-5">SLOT</h4>
+                          </div>
+                          <div class="ticket-info">
+                            <p><strong>Slot No :</strong>6</p>
+                            <p><strong>Fare :</strong>100/-</p>
+                          </div>
+                        </div>
+
+
+
+                        <div class="ticket-card2 slot" data-slot="7">
+                          <div class="ticket-title">
+                            <h4 class="text-center fs-5">SLOT</h4>
+                          </div>
+                          <div class="ticket-info">
+                            <p><strong>Slot No :</strong>7</p>
+                            <p><strong>Fare :</strong>100/-</p>
+                          </div>
+                        </div>
+
+                        <div class="ticket-card2 slot" data-slot="8">
+                          <div class="ticket-title">
+                            <h4 class="text-center fs-5">SLOT</h4>
+                          </div>
+                          <div class="ticket-info">
+                            <p><strong>Slot No :</strong>8</p>
+                            <p><strong>Fare :</strong>100/-</p>
+                          </div>
+                        </div>
+
+                        <!-- Add more slot cards here -->
+
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card fareForm">
+                        <div class="row ">
+                          <div class="col-md-6 col-xl-12">
+                            <div class="card">
+                              <div class="mb-3">
+                                <div class="card-header">
+                                  <h4 class="card-title .ticket-title"> Adjust Fare</h4>
+                                </div>
+                              </div>
+                              <div class="col-10 m-auto">
+                                <div class="mb-3">
+                                  <label class="form-label ">Slot</label>
+                                  <input type="text" class="form-control" name="slot" id="slotInput"
+                                    placeholder="No 2">
+                                </div>
+                                <div class="mb-3">
+                                  <label class="form-label">Fare</label>
+                                  <input type="text" class="form-control" name="fare" id="fareInput"
+                                    placeholder="100/-">
+                                </div>
+                                <div class="col-10 mb-3 m-auto">
+                                  <input type="submit" value="Update" class="btn btn-info col-12 m-auto">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const slotInputs = document.querySelectorAll('.slot');
+    const slotInput = document.getElementById('slotInput');
+    const fareInput = document.getElementById('fareInput');
+
+    slotInputs.forEach(slot => {
+      slot.addEventListener('click', () => {
+        slotInput.value = slot.dataset.slot;
+      });
+    });
+  </script>
+</body>
+
+</html>

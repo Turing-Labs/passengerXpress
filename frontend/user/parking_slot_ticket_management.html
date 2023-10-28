@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Parking SLot Ticket</title>
+  <link href="./dist/css/tabler.min.css?1668287865" rel="stylesheet" />
+  <link href="./dist/css/tabler-flags.min.css?1668287865" rel="stylesheet" />
+  <link href="./dist/css/tabler-payments.min.css?1668287865" rel="stylesheet" />
+  <link href="./dist/css/tabler-vendors.min.css?1668287865" rel="stylesheet" />
+  <link href="./dist/css/demo.min.css?1668287865" rel="stylesheet" />
+  <style>
+    @import url('https://rsms.me/inter/inter.css');
+
+    :root {
+      --tblr-font-sans-serif: Inter, -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+    }
+
+    .ticket-card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 10px;
+      margin: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .ticket-info {
+
+      font-size: 18px;
+    }
+
+    .ticket-title {
+      font-size: 24px !important;
+    }
+
+
+    .ticket-card {
+      border: 2px solid #d63939;
+      border-radius: 10px;
+      margin: 20px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .ticket-card2 {
+      background-color: #f0f0f0;
+      border: 2px solid #878787;
+      border-radius: 10px;
+      width: 250px;
+      margin: 20px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      /* text-align: center; */
+    }
+
+    .ticket-title {
+      /* background-color: #ff6f61; */
+      /* color: white; */
+      /* padding: 10px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px; */
+    }
+
+    .ticket-info {
+      padding: 10px;
+    }
+
+    /* #payment-button {
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    } */
+    .innerCard {}
+  </style>
+</head>
+
+<body>
+  <script src="./dist/js/demo-theme.min.js?1668287865"></script>
+  <div class="page">
+    <!-- Navbar -->
+
+    <div class="page-wrapper">
+      <!-- Page header -->
+      <div class="page-header d-print-none">
+        <div class="container-xl">
+          <div class="row g-2 align-items-center">
+            <div class="col">
+              <h2 class="page-title">
+
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Page body -->
+      <div class="page-body">
+        <div class="container-xl">
+          <div class="row row-cards">
+            <div class="col-md-6 col-lg-12">
+              <div class="card">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title .ticket-title"> Recent Ticket</h3>
+                  </div>
+                  <!-- <div class="card-title " >
+  abc
+                  </div> -->
+
+                  <div class="col-md-6 col-lg-6 mt-3 mb-3 ps-5">
+                    <div class="card ticket-card">
+                      <div class="ribbon bg-red">Pendding Fare</div>
+                      <div class="card-body col-12  ">
+                        <h3 class="card-title ticket-title">Parking Ticket</h3>
+                        <div class="row d-flex col-12 align-items-center innerCard">
+                          <div class="ticket-info col-8">
+                            <p><strong>Parking Time:</strong> 2 hours</p>
+                            <p><strong>Cost:</strong> 100/-</p>
+                          </div>
+                          <div class="btn-list col-12">
+                            <a href="#" class="btn btn-info text-dark w-100 fs-2" data-bs-toggle="modal"
+                              data-bs-target="#modal-simple">
+                              <b> Pay Fare</b>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-blur fade" id="modal-simple" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Payment</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form action="https://httpbin.org/post" method="post" class="card col-xl-8 m-auto">
+                           
+                            <div class="card-body ">
+                                <div class="row ">
+                                    <div class="col-xl-12">
+                                        <div class="row">
+                                            <div class="col-md-6 col-xl-12">
+
+                                                <div class="mb-3">
+                                                    <label class="form-label required">
+                                                        Vehicle (User)</label>
+                                                    <select class="select2 form-control" id="select-state"
+                                                        name="username" list="username" required>
+                                                        <option>Vehicle1</option>
+                                                        <option>Vehicle2</option>
+                                                        <option>Vehicle3</option>
+                                                        <option>Vehicle4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label required ">Fare Rates
+                                                </label>
+                                                <input type="number" class="form-control"
+                                                    name="example-required-input" placeholder="100/-" required>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label class="form-label required">Date and Time</label>
+                                                <input type="datetime-local" class="form-control"
+                                                    name="example-disabled-input" id="dateandtimepicker-default"
+                                                    required>
+                                            </div>
+
+                                            <div class="mb-3 col-4 m-auto">
+                                                <input type="submit" class="btn btn-success col-12"
+                                                    value="Submit" />
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                    </div>
+
+                    </form>
+                        </div>
+                      
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title .ticket-title">History</h3>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+
+                      <div class="ticket-card2">
+                        <div class="ticket-title">
+                          <h2 class="text-center"> Ticket</h2>
+                        </div>
+                        <div class="ticket-info">
+                          <p><strong>Date:</strong>4-jan-2023</p>
+                          <p><strong>Fare :</strong>Paid </p>
+                        </div>
+                      </div>
+                      <div class="ticket-card2">
+                        <div class="ticket-title">
+                          <h2 class="text-center"> Ticket</h2>
+                        </div>
+                        <div class="ticket-info">
+                          <p><strong>Date:</strong>4-jan-2023</p>
+                          <p><strong>Fare :</strong>Paid </p>
+                        </div>
+                      </div>
+                      <div class="ticket-card2">
+                        <div class="ticket-title">
+                          <h2 class="text-center"> Ticket</h2>
+                        </div>
+                        <div class="ticket-info">
+                          <p><strong>Date:</strong>4-jan-2023</p>
+                          <p><strong>Fare :</strong>Paid </p>
+                        </div>
+                      </div>
+                      <div class="ticket-card2">
+                        <div class="ticket-title">
+                          <h2 class="text-center"> Ticket</h2>
+                        </div>
+                        <div class="ticket-info">
+                          <p><strong>Date:</strong>4-jan-2023</p>
+                          <p><strong>Fare :</strong>Paid </p>
+                        </div>
+                      </div>
+                      <div class="ticket-card2">
+                        <div class="ticket-title">
+                          <h2 class="text-center"> Ticket</h2>
+                        </div>
+                        <div class="ticket-info">
+                          <p><strong>Date:</strong>4-jan-2023</p>
+                          <p><strong>Fare :</strong>Paid </p>
+                        </div>
+                      </div>
+                      <div class="ticket-card2">
+                        <div class="ticket-title">
+                          <h2 class="text-center"> Ticket</h2>
+                        </div>
+                        <div class="ticket-info">
+                          <p><strong>Date:</strong>4-jan-2023</p>
+                          <p><strong>Fare :</strong>Paid </p>
+                        </div>
+                      </div>
+                      <div class="ticket-card2">
+                        <div class="ticket-title">
+                          <h2 class="text-center"> Ticket</h2>
+                        </div>
+                        <div class="ticket-info">
+                          <p><strong>Date:</strong>4-jan-2023</p>
+                          <p><strong>Fare :</strong>Paid </p>
+                        </div>
+                      </div>
+                      <div class="ticket-card2">
+                        <div class="ticket-title">
+                          <h2 class="text-center"> Ticket</h2>
+                        </div>
+                        <div class="ticket-info">
+                          <p><strong>Date:</strong>4-jan-2023</p>
+                          <p><strong>Fare :</strong>Paid </p>
+                        </div>
+                      </div>
+                      <div class="ticket-card2">
+                        <div class="ticket-title">
+                          <h2 class="text-center"> Ticket</h2>
+                        </div>
+                        <div class="ticket-info">
+                          <p><strong>Date:</strong>4-jan-2023</p>
+                          <p><strong>Fare :</strong>Paid </p>
+                        </div>
+                      </div>
+                      <div class="ticket-card2">
+                        <div class="ticket-title">
+                          <h2 class="text-center"> Ticket</h2>
+                        </div>
+                        <div class="ticket-info">
+                          <p><strong>Date:</strong>4-jan-2023</p>
+                          <p><strong>Fare :</strong>Paid </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Libs JS -->
+  <!-- Tabler Core -->
+  <script src="./dist/js/tabler.min.js?1668287865" defer></script>
+  <script src="./dist/js/demo.min.js?1668287865" defer></script>
+</body>
+
+</html>
