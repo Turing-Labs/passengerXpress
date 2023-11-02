@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parking Slot Booking Form</title>
-    <link href="../dist/css/tabler.min.css?1668287865" rel="stylesheet" />
-		<link href="../dist/css/tabler-flags.min.css?1668287865" rel="stylesheet" />
-		<link href="../dist/css/tabler-payments.min.css?1668287865" rel="stylesheet" />
-		<link href="../dist/css/tabler-vendors.min.css?1668287865" rel="stylesheet" />
-		<link href="../dist/css/demo.min.css?1668287865" rel="stylesheet" />
-   
-    <link href="../dist/css/demo.min.css?1668287865" rel="stylesheet" />
-    <style>
-      	@import url("https://rsms.me/inter/inter.css");
-			:root {
-				--tblr-font-sans-serif: Inter, -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
-			}
-      .ticket-card {
-        border: 2px solid #d63939;
-        border-radius: 10px;
-        margin: 20px;
-        padding: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      .ticket-info {
-        font-size: 18px;
-      }
 
-      .ticket-title {
-        font-size: 24px !important;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="page-wrapper">
-      <!-- Page header -->
-      <script src="./dist/js/demo-theme.min.js?1668287865"></script>
-		
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parking Slot Booking Form</title>
+  <link href="/static/css/tabler.min.css?1668287865" rel="stylesheet" />
+  <link href="/static/css/tabler-flags.min.css?1668287865" rel="stylesheet" />
+  <link href="/static/css/tabler-payments.min.css?1668287865" rel="stylesheet" />
+  <link href="/static/css/tabler-vendors.min.css?1668287865" rel="stylesheet" />
+  <link href="/static/css/demo.min.css?1668287865" rel="stylesheet" />
+
+  <link href="/static/css/demo.min.css?1668287865" rel="stylesheet" />
+  <style>
+    @import url("https://rsms.me/inter/inter.css");
+
+    :root {
+      --tblr-font-sans-serif: Inter, -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+    }
+
+    .ticket-card {
+      border: 2px solid #d63939;
+      border-radius: 10px;
+      margin: 20px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .ticket-info {
+      font-size: 18px;
+    }
+
+    .ticket-title {
+      font-size: 24px !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <!-- Page header -->
+    <script src="./dist/js/demo-theme.min.js?1668287865"></script>
+
     <div class="page-body">
       <div class="container-xl">
         <div class="row row-cards m-auto">
@@ -44,295 +49,313 @@
             <form action="https://httpbin.org/post" method="post" class="card">
               <div class="card-header">
                 <h4 class="card-title">Parking Slot Booking</h4>
-                
+
               </div>
               <div class="col-md-12 m-auto col-xl-12">
                 <div class="mb-3">
                   <div class="row mt-2">
                     <div class="col-5">
                       <label class="form-label" style="padding: 10px 25px;">Select Slots</label>
+                    </div>
+                    <div class="col-3">
+                      <div class="input-icon">
+                        <span class="input-icon-addon">
+                          <!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="4" y="5" width="16" height="16" rx="2" />
+                            <line x1="16" y1="3" x2="16" y2="7" />
+                            <line x1="8" y1="3" x2="8" y2="7" />
+                            <line x1="4" y1="11" x2="20" y2="11" />
+                            <line x1="11" y1="15" x2="12" y2="15" />
+                            <line x1="12" y1="15" x2="12" y2="18" />
+                          </svg>
+                        </span>
+                        <input class="form-control" placeholder="Select a date" id="datepicker-icon-prepend" />
                       </div>
-                        <div class="col-3">
-                          <div class="input-icon">
-                            <span class="input-icon-addon"
-                              ><!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
-                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <rect x="4" y="5" width="16" height="16" rx="2" />
-                                <line x1="16" y1="3" x2="16" y2="7" />
-                                <line x1="8" y1="3" x2="8" y2="7" />
-                                <line x1="4" y1="11" x2="20" y2="11" />
-                                <line x1="11" y1="15" x2="12" y2="15" />
-                                <line x1="12" y1="15" x2="12" y2="18" />
-                              </svg>
-                            </span>
-                            <input class="form-control" placeholder="Select a date" id="datepicker-icon-prepend" />
-                          </div>
-    
-              </div>
-              <div class="col-3">
-                <a href="#" class="btn btn-primary d-none d-sm-inline-block " data-bs-toggle="modal" data-bs-target="#modal-report">
+
+                    </div>
+                    <div class="col-3">
+                      <a href="#" class="btn btn-primary d-none d-sm-inline-block " data-bs-toggle="modal"
+                        data-bs-target="#modal-report">
+                        <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+
+                        Pay Now
+                      </a>
+                      <a href="#" class="btn btn-primary d-sm-none btn-icon" data-bs-toggle="modal"
+                        data-bs-target="#modal-report" aria-label="Create new report">
+
+
+                    </div>
+
+                  </div>
+
                   <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                  </svg>
+                  </a>
+                </div>
 
-                  Pay Now
-                </a>
-                <a href="#" class="btn btn-primary d-sm-none btn-icon" data-bs-toggle="modal" data-bs-target="#modal-report" aria-label="Create new report">
-                  
 
-      </div>
 
-                                          </div>
-                      
-                    <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
-                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <line x1="12" y1="5" x2="12" y2="19" />
-                        <line x1="5" y1="12" x2="19" y2="12" />
-                      </svg>
+                <div class="row g-2 m-auto justify-content-center m-auto">
+                  <div class="col-2 ">
+                    <label class="form-imagecheck mb-2">
+                      <input name="form-imagecheck" type="checkbox" value="1" class="form-imagecheck-input" />
+                      <span class="form-imagecheck-figure">
+                        <div class="form-imagecheck-image "
+                          style="background-color: #fff; width: 150px; text-align: center;">
+                          <h2>Slot 1</h2>
+                          <h2>Fare</h2>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="col-2">
+                    <label class="form-imagecheck mb-2">
+                      <input name="form-imagecheck" type="checkbox" value="2" class="form-imagecheck-input" />
+                      <span class="form-imagecheck-figure">
+                        <div class="form-imagecheck-image"
+                          style="background-color: #fff; width: 150px; text-align: center;">
+                          <p>Slot 2</p>
+                          <h2>Fare</h2>
+
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="col-2 ">
+                    <label class="form-imagecheck mb-2">
+                      <input name="form-imagecheck" type="checkbox" value="3" class="form-imagecheck-input" />
+                      <span class="form-imagecheck-figure">
+                        <div class="form-imagecheck-image"
+                          style="background-color: #fff; width: 150px; text-align: center;">
+                          <p>Slot 3</p>
+                          <h2>Fare</h2>
+
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="col-2 ">
+                    <label class="form-imagecheck mb-2">
+                      <input name="form-imagecheck" type="checkbox" value="1" class="form-imagecheck-input" />
+                      <span class="form-imagecheck-figure">
+                        <div class="form-imagecheck-image "
+                          style="background-color: #fff; width: 150px; text-align: center;">
+                          <p>Slot 4</p>
+                          <h2>Fare</h2>
+
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="row g-2 m-auto justify-content-center">
+                  <div class="col-2 ">
+                    <label class="form-imagecheck mb-2">
+                      <input name="form-imagecheck" type="checkbox" value="1" class="form-imagecheck-input" />
+                      <span class="form-imagecheck-figure">
+                        <div class="form-imagecheck-image "
+                          style="background-color: #fff; width: 150px; text-align: center;">
+                          <p>Slot 5</p>
+                          <h2>Fare</h2>
+
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="col-2">
+                    <label class="form-imagecheck mb-2">
+                      <input name="form-imagecheck" type="checkbox" value="2" class="form-imagecheck-input" />
+                      <span class="form-imagecheck-figure">
+                        <div class="form-imagecheck-image"
+                          style="background-color: #fff; width: 150px; text-align: center;">
+                          <p>Slot 6</p>
+                          <h2>Fare</h2>
+
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="col-2 ">
+                    <label class="form-imagecheck mb-2">
+                      <input name="form-imagecheck" type="checkbox" value="3" class="form-imagecheck-input" />
+                      <span class="form-imagecheck-figure">
+                        <div class="form-imagecheck-image"
+                          style="background-color: #fff; width: 150px; text-align: center;">
+                          <p>Slot 7</p>
+                          <h2>Fare</h2>
+
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="col-2 ">
+                    <label class="form-imagecheck mb-2">
+                      <input name="form-imagecheck" type="checkbox" value="1" class="form-imagecheck-input" />
+                      <span class="form-imagecheck-figure">
+                        <div class="form-imagecheck-image "
+                          style="background-color: #fff; width: 150px; text-align: center;">
+                          <p>Slot 8</p>
+                          <h2>Fare</h2>
+
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="row g-2 m-auto justify-content-center">
+                  <div class="col-2 ">
+                    <label class="form-imagecheck mb-2">
+                      <input name="form-imagecheck" type="checkbox" value="1" class="form-imagecheck-input" />
+                      <span class="form-imagecheck-figure">
+                        <div class="form-imagecheck-image "
+                          style="background-color: #fff; width: 150px; text-align: center;">
+                          <p>Slot 9</p>
+                          <h2>Fare</h2>
+
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="col-2">
+                    <label class="form-imagecheck mb-2">
+                      <input name="form-imagecheck" type="checkbox" value="2" class="form-imagecheck-input" />
+                      <span class="form-imagecheck-figure">
+                        <div class="form-imagecheck-image"
+                          style="background-color: #fff; width: 150px; text-align: center;">
+                          <p>Slot 10</p>
+                          <h2>Fare</h2>
+
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="col-2 ">
+                    <label class="form-imagecheck mb-2">
+                      <input name="form-imagecheck" type="checkbox" value="3" class="form-imagecheck-input" />
+                      <span class="form-imagecheck-figure">
+                        <div class="form-imagecheck-image"
+                          style="background-color: #fff; width: 150px; text-align: center;">
+                          <p>Slot 11</p>
+                          <h2>Fare</h2>
+
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="col-2 ">
+                    <label class="form-imagecheck mb-2">
+                      <input name="form-imagecheck" type="checkbox" value="1" class="form-imagecheck-input" />
+                      <span class="form-imagecheck-figure">
+                        <div class="form-imagecheck-image "
+                          style="background-color: #fff; width: 150px; text-align: center;">
+                          <p>Slot 12</p>
+                          <h2>Fare</h2>
+
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="modal modal-blur fade" id="modal-report" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="card ticket-card">
+                    <div class="ribbon bg-red">Pendding Fare</div>
+                    <div class="card-body col-12  ">
+                      <h3 class="card-title ticket-title">Parking Ticket</h3>
+                      <div class="row d-flex col-12 align-items-center innerCard">
+                        <div class="ticket-info col-8">
+                          <p><strong>Parking Time:</strong> 2 hours</p>
+                          <p><strong>Cost:</strong> 100/-</p>
+                        </div>
+                        <div class="btn-list col-12">
+                          <a href="#" class="btn btn-info text-dark w-100 fs-2" data-bs-toggle="modal"
+                            data-bs-target="#modal-simple">
+                            <b> Pay Fare</b>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+          <div class="modal modal-blur fade" id="modal-report2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+
+                  <div class="row col-6 m-auto justify-content-center">
+
+
+                    <div class="row">
+                      <label class="form-label">Pick a date</label>
+                      <div class="datepicker-inline p-0" id="datepicker-inline"></div>
+                    </div>
+                    <a href="#" class="btn btn-primary col-5 mt-2" data-bs-dismiss="modal">
+                      Done
                     </a>
-                    </div>
-                   
-                         
- 
-                  <div class="row g-2 m-auto justify-content-center m-auto">
-                    <div class="col-2 ">
-                      <label class="form-imagecheck mb-2">
-                        <input name="form-imagecheck" type="checkbox" value="1" class="form-imagecheck-input" />
-                        <span class="form-imagecheck-figure">
-                          <div class="form-imagecheck-image " style="background-color: #fff; width: 150px; text-align: center;">
-                            <h2>Slot 1</h2>
-                            <h2>Fare</h2>
-              </div>
-                        </span>
-                      </label>
-                    </div>
-                    <div class="col-2">
-                      <label class="form-imagecheck mb-2">
-                        <input name="form-imagecheck" type="checkbox" value="2" class="form-imagecheck-input" />
-                        <span class="form-imagecheck-figure">
-                          <div class="form-imagecheck-image" style="background-color: #fff; width: 150px; text-align: center;">
-                                        <p>Slot 2</p>
-                                        <h2>Fare</h2>
-                                        
-                          </div>
-                      </span>
-                      </label>
-                    </div>
-                    <div class="col-2 ">
-                      <label class="form-imagecheck mb-2">
-                        <input name="form-imagecheck" type="checkbox" value="3" class="form-imagecheck-input" />
-                        <span class="form-imagecheck-figure">
-                          <div class="form-imagecheck-image" style="background-color: #fff; width: 150px; text-align: center;">
-                            <p>Slot 3</p>
-                            <h2>Fare</h2>
-                            
-              </div>  
-                        </span>
-                      </label>
-                    </div>
-                    <div class="col-2 ">
-                      <label class="form-imagecheck mb-2">
-                        <input name="form-imagecheck" type="checkbox" value="1" class="form-imagecheck-input" />
-                        <span class="form-imagecheck-figure">
-                          <div class="form-imagecheck-image " style="background-color: #fff; width: 150px; text-align: center;">
-                            <p>Slot 4</p>
-                            <h2>Fare</h2>
-                            
-              </div>
-                        </span>
-                      </label>
-                    </div>
+
                   </div>
-                  <div class="row g-2 m-auto justify-content-center">
-                    <div class="col-2 ">
-                      <label class="form-imagecheck mb-2">
-                        <input name="form-imagecheck" type="checkbox" value="1" class="form-imagecheck-input" />
-                        <span class="form-imagecheck-figure">
-                          <div class="form-imagecheck-image " style="background-color: #fff; width: 150px; text-align: center;">
-                            <p>Slot 5</p>
-                            <h2>Fare</h2>
-                            
-              </div>
-                        </span>
-                      </label>
-                    </div>
-                    <div class="col-2">
-                      <label class="form-imagecheck mb-2">
-                        <input name="form-imagecheck" type="checkbox" value="2" class="form-imagecheck-input" />
-                        <span class="form-imagecheck-figure">
-                          <div class="form-imagecheck-image" style="background-color: #fff; width: 150px; text-align: center;">
-                                        <p>Slot 6</p>
-                                        <h2>Fare</h2>
-                                        
-                          </div>
-                      </span>
-                      </label>
-                    </div>
-                    <div class="col-2 ">
-                      <label class="form-imagecheck mb-2">
-                        <input name="form-imagecheck" type="checkbox" value="3" class="form-imagecheck-input" />
-                        <span class="form-imagecheck-figure">
-                          <div class="form-imagecheck-image" style="background-color: #fff; width: 150px; text-align: center;">
-                            <p>Slot 7</p>
-                            <h2>Fare</h2>
-                            
-              </div>  
-                        </span>
-                      </label>
-                    </div>
-                    <div class="col-2 ">
-                      <label class="form-imagecheck mb-2">
-                        <input name="form-imagecheck" type="checkbox" value="1" class="form-imagecheck-input" />
-                        <span class="form-imagecheck-figure">
-                          <div class="form-imagecheck-image " style="background-color: #fff; width: 150px; text-align: center;">
-                            <p>Slot 8</p>
-                            <h2>Fare</h2>
-                            
-              </div>
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="row g-2 m-auto justify-content-center">
-                    <div class="col-2 ">
-                      <label class="form-imagecheck mb-2">
-                        <input name="form-imagecheck" type="checkbox" value="1" class="form-imagecheck-input" />
-                        <span class="form-imagecheck-figure">
-                          <div class="form-imagecheck-image " style="background-color: #fff; width: 150px; text-align: center;">
-                            <p>Slot 9</p>
-                            <h2>Fare</h2>
-                            
-              </div>
-                        </span>
-                      </label>
-                    </div>
-                    <div class="col-2">
-                      <label class="form-imagecheck mb-2">
-                        <input name="form-imagecheck" type="checkbox" value="2" class="form-imagecheck-input" />
-                        <span class="form-imagecheck-figure">
-                          <div class="form-imagecheck-image" style="background-color: #fff; width: 150px; text-align: center;">
-                                        <p>Slot 10</p>
-                                        <h2>Fare</h2>
-                                        
-                          </div>
-                      </span>
-                      </label>
-                    </div>
-                    <div class="col-2 ">
-                      <label class="form-imagecheck mb-2">
-                        <input name="form-imagecheck" type="checkbox" value="3" class="form-imagecheck-input" />
-                        <span class="form-imagecheck-figure">
-                          <div class="form-imagecheck-image" style="background-color: #fff; width: 150px; text-align: center;">
-                            <p>Slot 11</p>
-                            <h2>Fare</h2>
-                            
-              </div>  
-                        </span>
-                      </label>
-                    </div>
-                    <div class="col-2 ">
-                      <label class="form-imagecheck mb-2">
-                        <input name="form-imagecheck" type="checkbox" value="1" class="form-imagecheck-input" />
-                        <span class="form-imagecheck-figure">
-                          <div class="form-imagecheck-image " style="background-color: #fff; width: 150px; text-align: center;">
-                            <p>Slot 12</p>
-                            <h2>Fare</h2>
-                            
-              </div>
-                        </span>
-                      </label>
-                    </div>
-                  </div>
+
                 </div>
               </div>
-              <div class="modal modal-blur fade" id="modal-report" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="card ticket-card">
-                          <div class="ribbon bg-red">Pendding Fare</div>
-                          <div class="card-body col-12  ">
-                            <h3 class="card-title ticket-title">Parking Ticket</h3>
-                            <div class="row d-flex col-12 align-items-center innerCard">
-                              <div class="ticket-info col-8">
-                                <p><strong>Parking Time:</strong> 2 hours</p>
-                                <p><strong>Cost:</strong> 100/-</p>
-                              </div>
-                              <div class="btn-list col-12">
-                                <a href="#" class="btn btn-info text-dark w-100 fs-2" data-bs-toggle="modal"
-                                  data-bs-target="#modal-simple">
-                                  <b> Pay Fare</b>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      </div>
-                      
-              
-                    </div>
-                    
-                  </div>
-                  <div class="modal modal-blur fade" id="modal-report2" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
-                      <div class="modal-content">
-                        <div class="modal-body">
 
-                          <div class="row col-6 m-auto justify-content-center">
-                          
 
-                              <div class="row">
-                                <label class="form-label">Pick a date</label>
-                                <div class="datepicker-inline p-0" id="datepicker-inline"></div>
-                              </div>
-                              <a href="#" class="btn btn-primary col-5 mt-2" data-bs-dismiss="modal">
-                                Done
-                              </a>
-                            
-                          </div>
-                 
-                          </div>
-                          </div>
-                          
-                  
-                        </div>
-                        
-                      </div>
-                </div>
-              </div>
-            </form>
+            </div>
+
           </div>
         </div>
-       
       </div>
+      </form>
+    </div>
+  </div>
+
+  </div>
 
   <script src="../dist/libs/apexcharts/dist/apexcharts.min.js?1668287865" defer></script>
-		<script src="../dist/libs/jsvectormap/dist/js/jsvectormap.min.js?1668287865" defer></script>
-		<script src="../dist/libs/jsvectormap/dist/maps/world.js?1668287865" defer></script>
-		<script src="../dist/libs/jsvectormap/dist/maps/world-merc.js?1668287865" defer></script>
-    <script src="../dist/libs/nouislider/dist/nouislider.min.js?1668287865" defer></script>
-		<script src="../dist/libs/litepicker/dist/litepicker.js?1668287865" defer></script>
-		<script src="../dist/libs/tom-select/dist/js/tom-select.base.min.js?1668287865" defer></script>
-		<!-- Tabler Core -->
-		<script src="../dist/js/tabler.min.js?1668287865" defer></script>
-		<script src="../dist/js/demo.min.js?1668287865" defer></script>
+  <script src="../dist/libs/jsvectormap/dist/js/jsvectormap.min.js?1668287865" defer></script>
+  <script src="../dist/libs/jsvectormap/dist/maps/world.js?1668287865" defer></script>
+  <script src="../dist/libs/jsvectormap/dist/maps/world-merc.js?1668287865" defer></script>
+  <script src="../dist/libs/nouislider/dist/nouislider.min.js?1668287865" defer></script>
+  <script src="../dist/libs/litepicker/dist/litepicker.js?1668287865" defer></script>
+  <script src="../dist/libs/tom-select/dist/js/tom-select.base.min.js?1668287865" defer></script>
+  <!-- Tabler Core -->
+  <script src="static/js/tabler.min.js?1668287865" defer></script>
+  <script src="static/js/demo.min.js?1668287865" defer></script>
 
-<script>
-  // @formatter:off
-  document.addEventListener("DOMContentLoaded", function () {
-    window.Litepicker &&
-      new Litepicker({
-        element: document.getElementById("datepicker-icon-prepend"),
-        buttonText: {
-          previousMonth: `<!-- Download SVG icon from http://tabler-icons.io/i/chevron-left -->
+  <script>
+    // @formatter:off
+    document.addEventListener("DOMContentLoaded", function () {
+      window.Litepicker &&
+        new Litepicker({
+          element: document.getElementById("datepicker-icon-prepend"),
+          buttonText: {
+            previousMonth: `<!-- Download SVG icon from http://tabler-icons.io/i/chevron-left -->
 <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="15 6 9 12 15 18" /></svg>`,
-          nextMonth: `<!-- Download SVG icon from http://tabler-icons.io/i/chevron-right -->
+            nextMonth: `<!-- Download SVG icon from http://tabler-icons.io/i/chevron-right -->
 <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="9 6 15 12 9 18" /></svg>`,
-        },
-      });
-  });
+          },
+        });
+    });
   // @formatter:on
-</script>
-  </body>
+  </script>
+</body>
+
 </html>

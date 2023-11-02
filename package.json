@@ -1,0 +1,31 @@
+{
+  "name": "passengerxpress",
+  "version": "1.0.0",
+  "description": "PassengerXpress is a web-based system designed for efficient vehicle parking management and passenger ticketing at a station. This system provides a user-friendly interface for both station administrators and passengers, streamlining vehicle parking and ticketing processes.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Turing-Labs/passengerXpress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Turing-Labs/passengerXpress/issues"
+  },
+  "homepage": "https://github.com/Turing-Labs/passengerXpress#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "nodemonConfig": {
+    "ext": "js,json,hbs,html"
+  }
+}

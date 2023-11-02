@@ -15,11 +15,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Range slider - Tabler - Premium and Open Source dashboard template with responsive and high quality UI.</title>
   <!-- CSS files -->
-  <link href="../../dist/css/tabler.min.css?1668287865" rel="stylesheet" />
-  <link href="../../dist/css/tabler-flags.min.css?1668287865" rel="stylesheet" />
-  <link href="../../dist/css/tabler-payments.min.css?1668287865" rel="stylesheet" />
-  <link href="../../dist/css/tabler-vendors.min.css?1668287865" rel="stylesheet" />
-  <link href="../../dist/css/demo.min.css?1668287865" rel="stylesheet" />
+  <link href="..//static/css/tabler.min.css?1668287865" rel="stylesheet" />
+  <link href="..//static/css/tabler-flags.min.css?1668287865" rel="stylesheet" />
+  <link href="..//static/css/tabler-payments.min.css?1668287865" rel="stylesheet" />
+  <link href="..//static/css/tabler-vendors.min.css?1668287865" rel="stylesheet" />
+  <link href="..//static/css/demo.min.css?1668287865" rel="stylesheet" />
   <style>
     @import url('https://rsms.me/inter/inter.css');
 
@@ -30,7 +30,7 @@
 </head>
 
 <body>
-  <script src="../../dist/js/demo-theme.min.js?1668287865"></script>
+  <script src="../static/js/demo-theme.min.js?1668287865"></script>
   <div class="page">
     <!-- Navbar -->
     <header class="navbar navbar-expand-md navbar-light d-print-none">
@@ -1125,7 +1125,8 @@
                       handles and corresponding start positions.</p>
                     <p>The <code class="language-plaintext highlighter-rouge">start</code> option uses the slider’s
                       <code class="language-plaintext highlighter-rouge">'format'</code> option to decode the input.
-                      Number input will be cast to string and decoded.</p>
+                      Number input will be cast to string and decoded.
+                    </p>
                     <div class="example no_toc_section">
                       <div class="example-content">
                         <div
@@ -1154,7 +1155,8 @@
                     </div>
                     <h2 id="range">range</h2>
                     <p>All values on the slider are part of a range. The range has a minimum and maximum value.
-                      <strong>The minimum value cannot be equal to the maximum value.</strong></p>
+                      <strong>The minimum value cannot be equal to the maximum value.</strong>
+                    </p>
                     <div class="example no_toc_section">
                       <div class="example-content">
                         <div
@@ -1274,7 +1276,8 @@
                     <p>The <code class="language-plaintext highlighter-rouge">limit</code> option is the oposite of the
                       margin option, limiting the maximum distance between two handles. As with the margin option, the
                       <code class="language-plaintext highlighter-rouge">limit</code> option can only be used on linear
-                      sliders.</p>
+                      sliders.
+                    </p>
                     <div class="example no_toc_section">
                       <div class="example-content">
                         <div
@@ -1359,8 +1362,8 @@
   <!-- Libs JS -->
   <script src="../../dist/libs/nouislider/dist/nouislider.min.js?1668287865" defer></script>
   <!-- Tabler Core -->
-  <script src="../../dist/js/tabler.min.js?1668287865" defer></script>
-  <script src="../../dist/js/demo.min.js?1668287865" defer></script>
+  <script src="../static/js/tabler.min.js?1668287865" defer></script>
+  <script src="../static/js/demo.min.js?1668287865" defer></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       let sliderTriggerList = [].slice.call(document.querySelectorAll("[data-slider]"));
